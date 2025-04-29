@@ -26,21 +26,6 @@ function App() {
     }
   ];
 
-  const blogs = [
-    {
-      title: "Streamline Your CI/CD Workflow: Building a Simple Jenkins Freestyle Pipeline",
-      date: "",
-      description: "This is a straightforward example of setting up a Jenkins Freestyle project for CI/CD, demonstrating how to efficiently manage your build, test, and deployment processes.",
-      link: "https://jasaiblogs.hashnode.dev/streamline-your-cicd-workflow-building-a-simple-jenkins-freestyle-pipeline"
-    },
-    {
-      title: "Modern CSS Techniques",
-      date: "",
-      description: "Exploring modern CSS features and best practices",
-      link: "https://yourblog.com/modern-css"
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-gray-50">
       <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
@@ -48,13 +33,13 @@ function App() {
         <HeroSection />
         <SkillsSection />
         <ProjectsSection projects={projects} />
-        <BlogsSection blogs={blogs} />
+        <BlogsSection />
         <ContactSection />
       </main>
       <footer className="bg-white">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <p className="text-center text-gray-500">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Jasai Hansda. All rights reserved.
           </p>
         </div>
       </footer>
